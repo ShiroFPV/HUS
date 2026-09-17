@@ -1,0 +1,16 @@
+# Nur Quellcode versionieren - keine Kompilate, .dSYM-Ordner, .DS_Store
+*
+!*/
+!*.c
+!*.h
+!.gitignore
+!README.md
+
+# Projekte, die nicht zum Unterricht gehoeren
+/gui_todo/
+/main/
+/mineclone/
+/termfx/
+/todo/
+/.vscode/
+/.claude/
