@@ -30,6 +30,36 @@ Loesungen der C-Uebungen (Terminal-Anwendungen, kompiliert mit clang/gcc).
 | `aufgabe_3_1` | Multiplikationstabelle (2D-Array) |
 | `aufgabe_3_2` | 3 Zahlen sortieren (`sortIntegerArray`, 3 Verzweigungen) |
 | `aufgabe_3_3` | Bis zu 200 Zahlen sortieren (BubbleSort, Eingabe-Ende mit 9999) |
+| `aufgabe_3_3z` | Zusatz: BubbleSort gegen `qsort` mit Zeitmessung |
+
+### Zusatz 3.3z - Laufzeitvergleich
+
+`aufgabe_3_3z` sortiert dieselben Zahlen mit BubbleSort und mit `qsort` aus
+der Standardbibliothek und misst beide Zeiten. Die Datenquelle wird oben im
+Programm mit `DATENQUELLE` gewaehlt:
+
+| Wert | Bedeutung |
+| --- | --- |
+| `0` | Zahlen von Hand eingeben (Ende mit 9999) |
+| `1` | festes Test-Array (10 Werte) |
+| `2` | 200 Zufallszahlen - Standard, fuer den Zeitvergleich am aussagekraeftigsten |
+
+Ein einzelner Sortiervorgang von 200 Zahlen dauert nur wenige Mikrosekunden und
+waere damit so kurz wie die Messungenauigkeit von `clock()` selbst. Darum wird
+jedes Verfahren `WIEDERHOLUNGEN` mal ausgefuehrt. Da jeder Durchgang eine frische
+unsortierte Kopie braucht, wird die Zeit fuer das reine Kopieren separat gemessen
+und abgezogen.
+
+Messung mit 200 Zufallszahlen, 10000 Wiederholungen:
+
+| Verfahren | pro Durchgang |
+| --- | --- |
+| BubbleSort | 27.32 us |
+| `qsort` | 2.55 us |
+
+`qsort` ist damit rund 10x schneller. Mit nur 10 Werten (`DATENQUELLE 1`) schrumpft
+der Unterschied auf etwa Faktor 1.1 - der Vorteil von O(n log n) gegenueber O(n^2)
+zeigt sich erst bei groesseren Datenmengen.
 
 ## Kompilieren
 
