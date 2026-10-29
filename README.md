@@ -35,6 +35,9 @@ Loesungen der C-Uebungen (Terminal-Anwendungen, kompiliert mit clang/gcc).
 | `aufgabe_3_4a` | Satzlaenge bestimmen (`myStrlen`, ohne `strlen()`) |
 | `aufgabe_3_4b` | Anzahl Woerter in einem Satz bestimmen |
 | `aufgabe_3_5` | Zaehlt, wie oft der Buchstabe 'a' in einem Satz vorkommt |
+| `aufgabe_3_6` | Rechtschreibfehler erkennen (Wort mit Woerterliste vergleichen, wenigste Fehler) |
+| `aufgabe_3_7` | Woerter alphabetisch sortieren (BubbleSort, Vergleich wie `strcmp`) |
+| `aufgabe_3_8` | Geraetedaten-Zeilen mit `sscanf` parsen und gegen Sollwerte/Toleranz pruefen |
 
 ### Zusatz 3.3z - Laufzeitvergleich
 
