@@ -4,19 +4,6 @@
 #define ANZAHL_WOERTER 5
 #define MAX_LAENGE 50
 
-/*
- * Wie strcmp() vergleicht:
- * - Zeichenweise nach ASCII-Code, bis ein Unterschied oder '\0' kommt.
- * - Gross-/Kleinbuchstaben: Grossbuchstaben (65-90) kommen vor
- *   Kleinbuchstaben (97-122), also "Zug" < "apfel".
- * - Zahlen (48-57) kommen vor allen Buchstaben, "123" < "Abc".
- * - Sonderzeichen liegen verstreut (z.B. ' ' = 32, '!' = 33, '_' = 95),
- *   Umlaute sind nicht im ASCII-Bereich und landen am Ende.
- * - Gleicher Wortanfang (Aarau, Appenzell): Erstes unterschiedliches Zeichen
- *   entscheidet ('a' < 'p'), also "Aarau" < "Appenzell".
- *   Ist ein Wort Anfang des anderen, kommt das kuerzere zuerst ("Bern" < "Berner").
- */
-
 // Funktionsprototypen
 void bubbleSort(char woerter[][MAX_LAENGE], int anzahl);
 
