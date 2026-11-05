@@ -39,6 +39,16 @@ Loesungen der C-Uebungen (Terminal-Anwendungen, kompiliert mit clang/gcc).
 | `aufgabe_3_7` | Woerter alphabetisch sortieren (BubbleSort, Vergleich wie `strcmp`) |
 | `aufgabe_3_8` | Geraetedaten-Zeilen mit `sscanf` parsen und gegen Sollwerte/Toleranz pruefen |
 
+## Uebung 4 - Pointer
+
+| Ordner | Inhalt |
+| --- | --- |
+| `aufgabe_4_0` | Prinzip Pointer: Referenzieren, Dereferenzieren, Adressen mit `%p` / `%lx` |
+| `aufgabe_4_1` | Integer-Array per Pointer ausdrucken bis 99 (`printNumbers`, call-by-reference) |
+| `aufgabe_4_2` | Ersten und zweiten Buchstaben des ersten Wortes ueber Zeiger tauschen |
+| `aufgabe_4_2z` | Anfangsbuchstaben der ersten zwei Woerter tauschen (`findSecondWord` liefert Index) |
+| `aufgabe_4_3` | Eigenes `myStrCat` ohne `string.h`, Strings mit Zeigern durchlaufen |
+
 ### Zusatz 3.3z - Laufzeitvergleich
 
 `aufgabe_3_3z` sortiert dieselben Zahlen mit BubbleSort und mit `qsort` aus
