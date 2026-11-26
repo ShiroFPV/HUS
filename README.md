@@ -48,6 +48,13 @@ Loesungen der C-Uebungen (Terminal-Anwendungen, kompiliert mit clang/gcc).
 | `aufgabe_4_2` | Ersten und zweiten Buchstaben des ersten Wortes ueber Zeiger tauschen |
 | `aufgabe_4_2z` | Anfangsbuchstaben der ersten zwei Woerter tauschen (`findSecondWord` liefert Index) |
 | `aufgabe_4_3` | Eigenes `myStrCat` ohne `string.h`, Strings mit Zeigern durchlaufen |
+| `aufgabe_4_4` | `struct sPerson`: Verschiedene Basisdatentypen gruppieren |
+| `aufgabe_4_5` | `typedef struct`: Alias `TPerson` definieren und mehrere Personen-Variablen anlegen |
+| `aufgabe_4_6` | Struct-Übergabe an Funktion per Call-by-Value (`printPerson(TPerson)`) |
+| `aufgabe_4_7` | Struct-Übergabe an Funktion per Call-by-Reference (`printPerson(const TPerson*)`, Pfeiloperator `->`) |
+| `aufgabe_4_8` | Array von Strukturen (`TPerson students[]`) und Schleifenausgabe (`printStudents`) |
+| `aufgabe_4_9` | Lernende im Struct-Array mit BubbleSort und `strcmp` alphabetisch nach Nachname sortieren |
+| `aufgabe_4_9z` | Struct erweitern (Jahrgang, Grösse) und nach Körpergrösse aufsteigend sortieren |
 
 ### Zusatz 3.3z - Laufzeitvergleich
 
